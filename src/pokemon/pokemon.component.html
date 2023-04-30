@@ -1,0 +1,40 @@
+<!-- COMPONENTE DE LA BARRA DE BUSQUEDA -->
+<div class="barraBusqueda">
+  <app-barra-busqueda (eventoChange)="onChange($event)"></app-barra-busqueda>
+</div>
+
+<div class="contenedor">
+  <div class="cartaPokemon" *ngFor="let pokemon of arrayPokemonsFiltrado">
+    <!-- IMAGEN -->
+    <div class="fondoImagen">
+      <img [src]="pokemon.imagen" />
+    </div>
+    <div class="infoPokemon">
+      <!-- NOMBRE -->
+      <div class="tituloNombre">{{ pokemon.nombre }}</div>
+      <!-- POSICION POKEDEX -->
+      <div class="numeroPokedex">Pokedex: {{ pokemon.posicion }}</div>
+      <!-- TIPOS -->
+      <div class="divTipos">
+        <span
+          *ngFor="let tipo of pokemon.tipo"
+          [class]="tipo.type.name"
+          class="tipoPokemon"
+        >
+          {{ tipo.type.name }}
+        </span>
+      </div>
+      <!-- STATS -->
+      <div class="stats">
+        <span *ngFor="let stat of pokemon.stats">
+          {{ stat.stat.name }} - {{ stat.base_stat }}<br />
+        </span>
+      </div>
+      <!-- ALTURA Y PESO -->
+      <div class="alturaYPeso">
+        <span class="spanAltura">Altura: {{ pokemon.altura }} dm</span>
+        <span class="spanPeso">Peso: {{ pokemon.peso }} hg</span>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,207 @@
+/* contiene todas las cartas pokemon */
+.contenedor {
+  justify-content: center;
+  margin-top: 100px;
+  margin-left: 80px;
+  margin-right: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 10px;
+}
+
+/* div con la informacion del pokemon que esta debajo de la imagen */
+.infoPokemon {
+  padding: 20px;
+}
+
+/* cada carta completa de cada pokemon */
+.cartaPokemon {
+  width: auto;
+  height: auto;
+  float: left;
+  margin: 10px;
+  background: rgb(255, 255, 255);
+  border: 1px solid #ccc;
+  box-shadow: 0px 0px 10px;
+  max-width: 800px;
+}
+
+/* al pasar encima de las cartas pokemon */
+.cartaPokemon:hover {
+  transform: scale(1.02);
+}
+
+/* fondo del div de debajo de la imagen del pokemon */
+.fondoImagen {
+  background-image: url('https://i.pinimg.com/originals/d6/7c/3c/d67c3cbce4d7e9355e8522e10434d76c.jpg');
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  height: auto;
+  width: 50%;
+}
+
+/* nombre pokemon */
+.tituloNombre {
+  font-size: 40px;
+  font-weight: bold;
+  color: #272727;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* DIV que contiene los tipos del pokemon */
+.divTipos {
+  float: right;
+}
+
+/* texto con el numero de pokedex */
+.numeroPokedex {
+  margin-left: 10px;
+}
+
+/* texto con los stats */
+.stats {
+  margin-bottom: 20px;
+  margin-top: 30px;
+}
+
+/* contiene la info de altura y peso */
+.alturaYPeso {
+  font-weight: bold;
+}
+
+/* margen al SPAN de altura para que quede separado de peso */
+.spanAltura {
+  margin-right: 20px;
+}
+
+/* contenedor con la barra de busqueda */
+.barraBusqueda {
+  position: fixed;
+  right: 10px;
+  top: 70px;
+  float: right;
+  z-index: 9999;
+}
+
+/* ---- TIPOS POKEMON ---- */
+.tipoPokemon {
+  display: inline-block;
+  width: auto;
+  height: 20px;
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-right: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 17px;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.normal {
+  background-color: #b2b2b2;
+  border: 2px inset #b2b2b2;
+}
+
+.bug {
+  background-color: #a4b415;
+  border: 2px inset #a4b415;
+}
+
+.fighting {
+  background-color: #ba2937;
+  border: 2px inset #ba2937;
+}
+
+.ice {
+  background-color: #92d6d8;
+  border: 2px inset #92d6d8;
+}
+
+.psychic {
+  background-color: #dd768b;
+  border: 2px inset #dd768b;
+}
+
+.fire {
+  background-color: #f38420;
+  border: 2px inset #f38420;
+}
+
+.steel {
+  background-color: #b6b6bf;
+  border: 2px inset #b6b6bf;
+}
+
+.water {
+  background-color: #6795e6;
+  border: 2px inset #6795e6;
+}
+
+.grass {
+  background-color: #7ac749;
+  border: 2px inset #7ac749;
+}
+
+.electric {
+  background-color: #dcd01e;
+  border: 2px inset #dcd01e;
+}
+
+.dragon {
+  background-color: #633bda;
+  border: 2px inset #633bda;
+}
+
+.dark {
+  background-color: #6f5b41;
+  border: 2px inset #6f5b41;
+}
+
+.fairy {
+  background-color: #d6aad8;
+  border: 2px inset #d6aad8;
+}
+
+.unknown {
+  background-color: #3d3d3d;
+  border: 2px inset #3d3d3d;
+}
+
+.shadow {
+  background-color: #453727;
+  border: 2px inset #453727;
+}
+
+.ghost {
+  background-color: #6a59a0;
+  border: 2px inset #6a59a0;
+}
+
+.rock {
+  background-color: #b7a230;
+  border: 2px inset #b7a230;
+}
+
+.ground {
+  background-color: #cac16a;
+  border: 2px inset #cac16a;
+}
+
+.poison {
+  background-color: #914b86;
+  border: 2px inset #914b86;
+}
+
+.flying {
+  background-color: #a08aef;
+  border: 2px inset #a08aef;
+}
